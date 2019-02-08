@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Dashboard | node-login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</head>
+<body>
+    <div class="row">
+      <div class="col-md-12">
+        <nav class="navbar navbar-dark bg-dark p-3">
+          <h1 class="navbar-brand mb-0 h1">Dashboard</h1>
+          <span class="text-white span">Você está logado como: <strong><%= user.name %></strong></span>
+          <a href="/logout">Logout</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row p-5">
+        <div class="col-md-4">
+          <img src="https://i.imgur.com/I80W1Q0.png" alt="avatar" class="w-100">
+        </div>
+        <div class="col-md-8">
+          <ul class="list-unstyled pt-5">
+            <li class="list h5 font-weight-bold p-2">Name: <span class="h4 font-weight-light d-block"><%= user.name %></span> </li>
+            <li class="list h5 font-weight-bold p-2">E-mail: <span class="h4 font-weight-light d-block"><%= user.email %></span> </li>
+            <li class="list h5 font-weight-bold p-2">Data de criação: <span class="h4 font-weight-light d-block"><%= user.date %></span> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>
