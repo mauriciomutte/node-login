@@ -2,6 +2,8 @@
 
 Sistema de usuária usando Node.js + Express + Passport
 
+![Example](https://media.giphy.com/media/41g6S4woHpyPMgjU43/giphy.gif)
+
 ## Baixando dependências
 
 ### Código
