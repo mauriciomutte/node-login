@@ -11,7 +11,7 @@ const app = express();
 require('./config/passport')(passport);
 
 // Mongo connect
-mongoose.connect('mongodb://localhost:27020/mydb', { useNewUrlParser: true })
+mongoose.connect('mongodb://localhost:27017/mydb', { useNewUrlParser: true })
   .then(() => console.log('MongoDB Connected'))
   .catch(err => console.log(err));
 
