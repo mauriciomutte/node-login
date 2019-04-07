@@ -1,6 +1,6 @@
 # node-login
 
-Sistema de usuária usando Node.js + Express + Passport
+Sistema de usuário usando Node.js + Express + Passport
 
 ![Example](https://media.giphy.com/media/41g6S4woHpyPMgjU43/giphy.gif)
 
