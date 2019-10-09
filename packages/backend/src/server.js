@@ -7,9 +7,13 @@ const app = express();
 mongoose.connect(
   'mongodb://localhost:27017/node-login', 
   { 
-    useNewUrlParser: true, 
+    useNewUrlParser: true,
     useUnifiedTopology: true,
   },
 );
 
+// Middlewares
+app.use(express.json());
+
+// Server
 app.listen(3030);
