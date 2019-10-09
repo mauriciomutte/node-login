@@ -1,15 +1,21 @@
 {
-  "name": "node-login",
+  "name": "backend",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:mauriciomutte/node-login.git",
-  "author": "Mauricio Mutte <litiobr@gmail.com>",
   "license": "MIT",
-  "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "joi": "^14.3.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.7.4"
+  },
   "devDependencies": {
-    "lerna": "^3.16.5"
+    "nodemon": "^1.19.3"
   }
 }
